@@ -7,4 +7,11 @@
 
 // 2. When an element with the class .slide-me is clicked on, slide that .slide-me up.
 
+$('.box').on('click', function() {
+	$(this).fadeOut(350); 
 
+}); 
+
+$('.slide-me').on('click', function() {
+	$(this).slideUp(500); 
+}); 
