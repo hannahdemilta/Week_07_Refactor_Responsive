@@ -14,4 +14,10 @@ button {
   background-color: #F78FA7;
   padding: 20px;
   border-radius: 4px;
+  transition: background-color .3s ease-in-out;
+}
+
+button:hover {
+  background-color: #FFFFFF;
+  border-color: #F78FA7; 
 }

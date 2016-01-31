@@ -64,13 +64,14 @@ body {
   margin-bottom: .52em;
   opacity: 1;
   position: relative;
-  /* 1. Set the transition property on the .line class */
+  transition: all .3s ease-out;
 
 }
 
 /* Second line */
 .active .line:nth-child(2) {
   /* 2. When the active class is added to the .hamburger-icon, fade the middle line out (hint: you can use the 'opacity' property). */
+  opacity: 0;
 
 }
 
@@ -82,6 +83,10 @@ body {
 
   /*5. Use the relative positioning of the .line class to move the line 6px from the left*/
 
+  transform: rotate(45deg);
+  transform-origin: left;
+  left: 6px;
+
 }
 
 /* Bottom line */
@@ -91,5 +96,9 @@ body {
   /* 7. Use the CSS 'transform-origin' property to set the center of rotation to the left.*/
 
   /* 8. Use the relative positioning of the .line class to move the line 6px from the left*/
+  transform: rotate(-45deg);
+  transform-origin: left;
+  left: 6px;
 
 }
+
